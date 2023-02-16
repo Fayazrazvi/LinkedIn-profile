@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>Linked in profile page</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="C:/Program Files/Sublime Text 3/Linkedin.css">
+</head>
+<body >
+		  <header class="head">
+			  <img class="in" src="C:/Users/SM - Trainee/Downloads/in.png">
+			  <!-- <div class="search-icon">
+			     <span class="material-icons">search
+                 </span> 
+              </div> -->
+			  <input class="search-input" type="search" placeholder="Search..."  />
+			  <div class="top-right">
+				  <div class="top-right-icons"><span class="material-icons">home
+					  
+	            	  </span><div>Home</div>
+	              </div>
+	              <div class="top-right-icons">
+	            	  <span class="material-icons">supervisor_account
+	            	  </span><div> My Network</div>
+	              </div>
+
+	              <div class="top-right-icons">
+	            	  <span class="material-icons">business_center
+	            	  </span><div>Jobs</div>
+	              </div>
+
+	              <div class="top-right-icons">
+	            	  <span class="material-icons">textsms
+	            	  </span><div>Message</div>
+	              </div>
+
+	              <div class="top-right-icons">
+	            	  <span class="material-icons">notifications
+	            	  </span><div>Notofication</div>
+	              </div>
+
+	              <div class="top-right-icons">
+	            	  <span class="material-icons">account_circle
+	            	  </span><div>Me</div>
+	              </div>
+	              <div class="top-right-icons">
+	              	<span class="material-icons">apps
+	              	</span><div>Work</div>
+	              </div>
+	              <a href="#">Try premium for<br>free</a>
+              </div>
+		  </header>		
+		  <div class="body">
+		      <div class="container1">
+			     <div class="profile">
+				    <img class="primg" src="C:/Users/SM - Trainee/Pictures/background img.jpg"><br>
+				    
+							 <!-- Button trigger modal -->
+					<button type="button"  data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="edit">
+				  		  <span class="material-icons">edit
+				  		  </span>					  
+					</button>
+
+					<!-- Modal -->
+					<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+					  <div class="modal-dialog modal-dialog-scrollable">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="staticBackdropLabel">Edit intro</h5>
+					        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					      </div>
+					      <div class="modal-body">
+					        <p>*indicates required</p><br>
+					        <label>First name<sup>*</sup></label><br>
+					        <input type="text" class="edit-box" id="first-name" placeholder="First name"><br>
+					        <label>Last name<sup>*</sup></label><br>
+					        <input type="text" class="edit-box" id="last-name" placeholder="Last name"><br>
+					         <label>Additional name</label><br>
+					        <input type="text" class="edit-box" id="additional-name" placeholder="Additional name"><br>
+					        <p>Name pronounciation</p><br>
+					        <span class="material-icons">info</span>
+					        <p>This can only be added using our mobile app</p>
+					        <label>Pronouns</label>
+					          <input list="pronouns" class="edit-box" name="please select" />
+					          <datalist id="pronouns">
+					            <option value="Please Select">
+					            <option value="She/Her">
+					            <option value="He/Him">
+					            <option value="They/them">
+					            <option value="Custom">
+					          </datalist>
+					        <p>Let others know how to refer to you.</p><br>
+					        <p>Learn more about <a href="#"> gender pronouns</a>.</p>
+					        <label>Headlines<sup>*</sup></label><br>
+					        <input type="text" class="edit-box" id="headlines" placeholder="Headlines">
+					        <h3>Current position</h3><br>
+					        <a href="#">+ Add new position</a><br>
+					        <label>Industry<sup>*</sup></label><br>
+					        <input type="text" class="edit-box" id="industry" placeholder="Computer Software">
+					        <p>Learn more about <a href="#"> industry options</a>.</p>
+					        <h3>Education</h3><br>
+					        <a href="#">+ Add new education</a>
+					        <h3>Location</h3><br>
+					        <label>Country/Region<sup>*</sup></label><br>
+					        <input type="text" class="edit-box" id="country" placeholder="India"><br>
+					        <label>City</label><br>
+					        <input type="text" class="edit-box" id="industry" placeholder="Kallakurichi , tamilnadu">
+					        <h3>Contact info</h3><br>
+					        <p>Add or edit your profile URL, email, and more</p>
+					        <a href="#">Edit contact info</a>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Save</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+				    <img class="myimg" src="C:/Users/SM - Trainee/Downloads/WhatsApp Image 2023-02-03 at 10.10.50 AM.jpeg">
+				    <h3 class="name">Fayaz razvi</h3>
+				    <p class="degree">BE(ECE)</p>
+				    <p class="address">Kallakurichi, Tamil Nadu, India.<a href="#" class="contact">Contact info</a></p>
+				    <div class="under-address">
+				      <div class="buttons1">
+				    	  <button class="open">Open to</button>
+				    	  <button type="button" class="add-profile" data-bs-toggle="modal" data-bs-target="#staticBackdrop1" class="add-profile">Add profile section </button>
+						  <!-- Modal -->
+						  <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+						  <div class="modal-dialog modal-dialog-scrollable">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <h5 class="modal-title" id="staticBackdropLabel">Add to profile</h5>
+						        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						      </div>
+						      <div class="modal-body">
+						          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseExample">Core</button>
+						            <div class="collapse" id="collapseOne">
+						             <div class="card card-body">
+						                <p>Start with the basics. Filling out these sections will help you be discovered by recruiters and people you may know</p><br>
+						                <p>Add about</p><br>
+						                <hr>
+						                <p>Add education</p><br>
+						                <hr>
+						                <p>Add position</p><br>
+						                <hr>
+						                <p>Add career break</p><br>
+						                <hr>
+						                <p>Add skill</p><br>
+						                <hr>
+						              </div>
+						            </div>
+						          <hr>
+						          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseExample">Recommended</button>
+						            <div class="collapse" id="collapseTwo">
+						             <div class="card card-body">
+						                <p>Completing these sections will increase your credibility and give you access to more opportunities</p><br>
+						                <p>Add featured</p><br>
+						                <hr>
+						                <p>Add licenses & certifications</p><br>
+						                <hr>
+						                <p>Add courses</p><br>
+						                <hr>
+						                <p>Add recommendations</p><br>
+						                <hr>
+						              </div>
+						            </div>
+						          <hr>
+						          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseExample">Additional</button>
+						            <div class="collapse" id="collapseThree">
+						             <div class="card card-body">
+						                <p>Add even more personality to your profile. These sections will help you grow your network and build more relationships.</p><br>
+						                <p>Add volunteer experience</p><br>
+						                <hr>
+						                <p>Add publications</p><br>
+						                <hr>
+						                <p>Add patents</p><br>
+						                <hr>
+						                <p>Add projects</p><br>
+						                <hr>
+						                <p>Add honors & awards</p><br>
+						                <hr>
+						                <p>Add test scores</p><br>
+						                <hr>
+						                <p>Add languages</p><br>
+						                <hr>
+						                <p>Add organizations</p><br>
+						                <hr>
+						                <p>Add causes</p><br>
+						                <hr>
+						                <p>Add contact info</p><br>
+						                <hr>
+						              </div>
+						            </div>
+						      </div>
+						    </div>
+						  </div>
+						  </div>
+				    	  <button class="more">More</button>
+
+			      	  </div>
+			          <div class="buttons2">
+			        	  <button class="buttons1-bottom-left">Open to work<br>Engineer roles<br><a href="#">See all details</a></button>
+			      	        <div class="buttons1-bottom-left-edit">
+			      		        <span class="material-icons">edit
+			      		        </span>
+				  	        </div>
+				  	       <button class="buttons1-bottom-center">Share that you’re hiring and attract qualified candidates.<br><a href="#">Get started</a></button>
+				  	      <div class="buttons1-bottom-center-close">
+				  	    	  <span class="material-icons">close
+				  	    	  </span>
+				  	      </div>
+				  	      <button class="buttons1-bottom-right">Showcase services you offer <br>so you and your business can be found in search.<a href="#">Get started</a></button>	
+				  	      <div class="buttons1-bottom-right-close">
+				  	    	  <span class="material-icons">close
+				  	    	  </span>
+				  	      </div>
+			          </div> 
+			     </div>
+			      <div class="suggestion">
+			    	  <p><h3 class="suggested-for-you">Suggested for you</h3></p>
+			    	  <div class="eye">
+			    	      <span class="material-icons">visibility
+	                      </span><p class="private-to-you">private to you</p>
+	                  </div>
+	                  <label for="file">Intermediate </label><br>
+                         <progress id="file" max="100" value="85.71"></progress>
+                         <p class="six">6/7</p>
+                         <p class="complete">Complete 1 step to achieve <a href="#"> All-star</a></p>
+
+                         <div class="under-complete">
+                         	<img class="anime" src="C:/Users/SM - Trainee/Pictures/anime cv.jpg">
+                         	<p class="right-to-anime">Write a summary to highlight your personality or work experience</p><br>
+                         	<p class="bottom-to-anime">Members who include a summary receive up to 3.9 times as many profile views.</p>
+                         	<button class="add-a-summary">Add a summary</button>
+                         </div>
+			      </div>
+			      <div class="analytic">
+			      	<p><h3 class="Analytics">Analytics</h3></p>
+			    	  <div class="eye">
+			    	      <span class="material-icons">visibility
+	                      </span><p class="private-to-you">private to you</p>
+	                      <span class="material-icons">supervisor_account</span>
+	                      <p class="update-your-profile"><a href="#"> 0 profile views</a> <br>Update your profile to attract <br>viewers.</p>
+	                  </div>
+			      </div>
+			      <div class="resource">
+			      	<p><h3 class="Resources">Resources</h3></p>
+			    	  <div class="eye">
+			    	      <span class="material-icons">visibility
+	                      </span><p class="private-to-you">private to you</p>
+	                      <span class="material-icons">cell_tower</span>
+	                      <p class="creater-mode">Creater mode</p>
+	                      <button class="off">off</button>
+	                      <p class="get">Get discovered, showcase content on your profile, and get access to creator tools</p>
+	                      <hr class="hr">
+	                      <div class="under-get">
+	                      <span class="material-icons">supervisor_account</span><div class="my-network"> My Network</div>
+	                      </div>
+	                      <p class="see">See and manage your connections and interests.</p>
+	                <hr>
+	                      <div class="under-see"><p class="show-resource">show all 5 resources</p>
+	                      	<span id="east" class="material-icons">east</span>
+	                      </div>      
+			      </div>
+			      <div class="activity">
+			      	<p><h3 class="Activity">Activity</h3></p>
+			      	<p class="follower"> 0 followers</p>
+			      	<button class="start-a-post">Start a post </button>
+			      	<div class="under-follower">
+				      	<p>You haven't posted latelyYou haven't posted lately</p>
+	                    <p>Recent posts you share or comment on will be displayed here</p>
+                    </div>
+                    <hr>
+                    <div class="under-recent"><p class="show-activity">show all activity</p>
+	                    <span id="east2" class="material-icons">east</span>
+	                </div>
+			      </div>
+		      </div>
+		      <div class="container2">
+		    	  <div class="right-column">
+		    		  <p>Edit public profile & URL</p>
+		    		  <div class="question">
+		    		  <span class="material-icons">help</span>
+		    		  </div>
+		    		  <hr>
+		    		  <p>Add profile in another language</p>
+		    		  <div class="question">
+		    		  <span class="material-icons">help</span>
+		    		  </div>
+		    	  </div>
+		    	  <div class="under-right-column">
+
+		    	  	<h2>People May You Know</h2>
+		    	  	<div class="person">
+		      	    	<img src="C:/Users/SM - Trainee/Downloads/images.jpg">
+		      	    	<h4>Arsullah</h4>
+		      	    	<p>Web Developer | App Developer | Vlogger</p>
+		      	    	<button onclick="fayaz(this.id,this.innerText)" id="follow1" >Follow</button>
+	      	        </div>
+	      	        <hr>
+	      	        <div class="person">
+	      	    		<img src="C:/Users/SM - Trainee/Downloads/images (1).jpg">
+	      	    	    <h4>Apsar</h4>
+		      	    	<p>BEST DESIGNER | Engineering Student at TSM</p>
+						<button onclick="fayaz(this.id,this.innerText)" id="follow2" >Follow</button>
+	      	        </div>
+	      	        <hr>
+	      	        <div class="person">
+		      	    	<img src="C:/Users/SM - Trainee/Downloads/alone.jpg">
+		      	    	<h4>Sheik Jameel</h4>
+		      	    	<p>CSE'23 @TCET || AI & ML Enthusiastic</p>
+		      	    	<button onclick="fayaz(this.id,this.innerText)" id="follow3" >Follow</button>
+	      	        </div>
+	      	        <hr>
+		      	    <div class="person">
+		      	    	<img src="C:/Users/SM - Trainee/Downloads/Sivan-hd-Images-1080p.jpg">
+		      	    	<h4>Abhishek Kumar Yadav</h4>
+		      	    	<p>Problem Solving | Android Developer</p>
+		      	    	<button onclick="fayaz(this.id,this.innerText)"  id="follow4" > Follow</button>
+		      	    </div>
+		            </div>
+		          </div>
+		      </div>
+		  </div>
+		  <script >
+		  	function fayaz(paraid,paravalue)
+		  	{
+		  		
+		  		 console.log(paraid);
+		  		if (paravalue=="Follow") 
+		  		{
+		  			document.getElementById(paraid).innerHTML="Unfollow";
+		  		}
+		  		else
+		  		{
+		  			document.getElementById(paraid).innerHTML="Follow";
+		  		}
+		  	}
+		  </script>
+</body>
+</html>
